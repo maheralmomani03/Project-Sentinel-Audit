@@ -1,47 +1,60 @@
-# 🛡️ Project Sentinel: Python-Powered Forensic Audit
-> **An end-to-end automated pipeline for financial anomaly detection and risk assessment.**
+# 🛡️ Project Sentinel: Automated Forensic Audit Pipeline
+> **Empowering Modern Finance with Python-driven Internal Controls and Anomaly Detection.**
 
 ---
 
 ## 🔍 Project Overview
-Manual auditing is reactive and slow. **Project Sentinel** transforms the audit process into a proactive digital operation. Using Python, this project simulates a corporate ledger, injects fraudulent patterns, and uses algorithmic filtering to catch "Red Flags" that manual processes often miss.
+In today’s data-heavy financial environments, manual auditing is no longer efficient. **Project Sentinel** is a professional forensic tool designed to automate the detection of financial fraud and errors. As an **Accountant & Data Analyst**, I built this pipeline to simulate corporate ledgers, inject fraudulent patterns, and use algorithmic filtering to catch "Red Flags" that traditional methods often miss.
 
 ---
 
-## 🛠️ The Tech Stack
-- **Engine:** Python 3.10
-- **Analysis:** Pandas (Data Wrangling)
-- **Visuals:** Plotly (Interactive Dashboards)
-- **Reporting:** XlsxWriter (Corporate Excel Formatting)
+## 🛠️ Technology Stack
+- **Analysis Engine:** Python 3.10
+- **Data Wrangling:** Pandas (Complex Filtering & Grouping)
+- **Interactive Dashboards:** Plotly (Dynamic Forensic Visualization)
+- **Professional Reporting:** XlsxWriter (Automated Corporate Excel Formatting)
 
 ---
 
-## 🔍 Audit Logic & Code Breakdown
+## 🔍 Audit Logic & Visual Evidence
 
-### 1. Synthetic Data Generation 🏗️
-The system generates a high-volume ledger with random transactions, but secretly injects fraud patterns (e.g., $155,000 entry and 2:00 AM ghost entries).
-*Code:* `scripts/generate_data.py`
+### 1. Audit Summary Overview 📊
+The process begins by screening 1,000+ transactions and categorizing them into risk zones to provide an immediate overview of the control environment.
+![Audit Overview](docs/terminal_preview.png)
+*Insight: The engine successfully isolated high-risk anomalies from standard operational data.*
 
-### 2. High-Value Anomaly Detection 🚨
-Using threshold-based filters, the engine isolates any transaction exceeding normal limits.
+### 2. High-Value Anomaly Detection (Amount Fraud) 🚨
+Using threshold-based filters, the system identifies transactions that exceed authorized operational limits, specifically flagging the detected **$155,000** theft.
 ![Anomaly Detection](docs/anomaly_chart.png)
-*Insight: The red outlier clearly indicates a breach of internal controls.*
+*Insight: Red outliers indicate critical breaches of internal financial controls.*
 
-### 3. Temporal (Time) Forensic Audit 🌙
-By converting time-strings into numerical values, we visualize "Working Hours Violations".
+### 3. Temporal Forensic Audit (Time Fraud) 🌙
+By analyzing time-stamps, the system identifies "Ghost Entries" posted outside official business hours.
 ![Time Audit](docs/time_audit.png)
-*Insight: All valid entries sit within the green zone, except for the detected fraud.*
+*Insight: A suspicious entry was flagged at **2:00 AM**, far outside the green "Official Business Hours" zone.*
 
-### 4. Professional Stakeholder Reporting 📊
-The final stage exports findings into a "ready-to-present" Excel file with corporate branding.
-#### 🔴 High-Value Alerts
+### 4. Professional Corporate Reporting (Excel Export) 📈
+Findings are exported into a "Ready-to-Present" Excel file, formatted with corporate styling and conditional highlights for management review.
+
+#### 🔴 High-Value Alerts Sheet
 ![Excel Report 1](docs/excel_high_value_report.png)
-#### 🌙 Night-Shift Alerts
+
+#### 🌙 Night-Shift Violations Sheet
 ![Excel Report 2](docs/excel_night_shift_report.png)
 
 ---
 
-## 👤 About the Author
-**Maher Al-Momani**
-Accounting Student | Aspiring Financial Data Analyst | CMA Candidate
-*Focused on the intersection of Financial Governance and Technology.*
+## 📂 Project Structure & Scripts
+The `/scripts` folder contains the full logic of the forensic lab:
+- **`generate_data.py`**: Synthetic ledger engine with injected fraud patterns.
+- **`audit_analysis.py`**: Core engine for identifying amount-based anomalies.
+- **`time_audit.py`**: Forensic time-series analysis for unauthorized entries.
+- **`beautify_excel.py`**: Automated Excel formatting with Corporate UI.
+- **`dashboard.py`**: Summary visualization engine.
+- **`interactive_audit.py`**: Interactive Plotly dashboard developer.
+
+---
+
+## 👨‍💻 Created by
+**Maher Al-Momani** - Accountant & Financial Data Analyst 🎓
+*Bridging the gap between Financial Governance and Modern Technology.*
